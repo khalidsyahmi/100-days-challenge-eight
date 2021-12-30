@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="/src/styles.css" />
+    <script src="/src/app.js" defer></script>
+    <title>JS Form Demo</title>
+  </head>
+  <body>
+    <h1>Form Demo</h1>
+
+    <form>
+      <div class="control">
+        <label for="product-name">Product Name</label>
+        <input
+          type="text"
+          id="product-name"
+          name="product-name"
+          maxlength="60"
+        />
+        <!-- char limit here! -->
+        <span id="charcount"> <span id="remaining-chars">60</span>/60 </span>
+      </div>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
