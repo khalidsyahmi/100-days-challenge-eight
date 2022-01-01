@@ -28,7 +28,7 @@ function keyPresses(event) {
   } else {
     spanElement.classList.remove("warning"); // wrapped in a String
     spanElement.classList.add("lit");
-  }
+  } // try adding 0 and 10 above conditions as well as change bg color of productInput
 }
 
 productInput.addEventListener("input", keyPresses);
