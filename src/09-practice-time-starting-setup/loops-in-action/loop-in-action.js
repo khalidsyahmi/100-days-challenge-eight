@@ -65,7 +65,7 @@ const diceBtn = document.querySelector("#statistics button");
 
 //f1
 function rollDice() {
-  return Math.floor(Math.random() * 6) + 1; // +1 begin 1 to 6 instead of zero
+  return Math.floor(Math.random() * 6) + 1; // +1 begin 1 to 6 instead of zero //.floor rounds up number
 }
 
 //f2
@@ -80,7 +80,7 @@ function deriveNumberOfRolls() {
   let hasRolled = false; // not rolled yet
   let numberOfRolls = 0; // use let since the value is transformed
 
-  //loop
+  //a loop that runs on the current condition until it is not anymore
   while (!hasRolled) {
     const rolledNumber = rollDice(); // assign into new variable everytime rollDice() calculation is performed //random
     /*   if (rolled==enteredNumber){
